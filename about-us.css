@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Poppins:ital,wght@0,300;1,600&family=Raleway:wght@300;400&family=Roboto:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    padding-bottom: 30px;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 15px auto;
+}
+
+.nav {
+    position: fixed;
+    background-color: #222;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav.active {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav.active a {
+    color: black;
+}
+
+.nav.active .container {
+    padding: 0;
+}
+
+.nav a.current,
+.nav a.hover {
+    color: red;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url(montain.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 15px;
+    z-index: -5;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+.hero h2 {
+    font-size: 36px;
+    line-height: 54px;
+    margin: 15px 0;
+    letter-spacing: 1px;
+}
+
+.container h2 {
+    font-size: 24px;
+    line-height: 36px;
+    margin: 15px auto;
+}
+
+.container .white-text {
+    color: white;
+    text-align: center;
+}
+
+.container p {
+    font-size: 15px;
+    line-height: 27px;
+}
+
+.first {
+    color: #1C4D79;
+    font-size: 40px;
+    font-family: sans-serif;
+    text-align: left;
+    margin-right: 10px;
+    margin-top: 100px;
+}
+
+.p1{
+    font-size: 20px;
+    text-align: left;
+    font-family: sans-serif;
+    margin-right: 10px;
+}
+
+.second {
+    font-size: 20px;
+    text-align: left;
+    font-family: sans-serif;
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+    width: 1000px;
+    margin: 20px;
+    margin-right: 260px;
+}
+
+.text{
+    flex: 1;
+}
+
+.image{
+    flex: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}

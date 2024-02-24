@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins&family=Roboto&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1A5E8C;
+}
+
+img {
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    object-fit: cover;
+}
+
+.carousel {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    height: 785px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    cursor: pointer;
+    width: 49.5%;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.nav {
+    position: fixed;
+    background-color: #222;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 15px auto;
+}
+
+.nav {
+    position: fixed;
+    background-color: #222;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav.active {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav.active a {
+    color: black;
+}
+
+.nav.active .container {  
+    padding: 0;
+}
+
+.nav a.current,
+.nav a.hover {
+    color: red;
+    font-weight: bold;
+}
+
+marquee{
+    background-color: white;
+}
